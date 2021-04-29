@@ -3,6 +3,7 @@ When executed it will make a system popup mentioning if any new program is intro
 
 # Installation
 pip install selenium
+
 Download chromedriver and put at appropriate path
 
 Tested on Ubuntu 18.04, Python3
