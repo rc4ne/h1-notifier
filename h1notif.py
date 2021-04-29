@@ -26,7 +26,7 @@ chrome_options.add_argument("--headless")
 chrome_options.add_argument("--window-size=1920x1080")
 
 # download the chrome driver from https://sites.google.com/a/chromium.org/chromedriver/downloads
-chrome_driver = "chromedriver.exe" # path to driver (make sure driver version is same as browser installed)
+chrome_driver = "chromedriver" # path to driver (make sure driver version is same as browser installed)
 driver = webdriver.Chrome(chrome_options=chrome_options, executable_path=chrome_driver)
 driver.get("https://hackerone.com/directory/programs?offers_bounties=true&order_direction=DESC&order_field=started_accepting_at")
 driver.implicitly_wait(20)
