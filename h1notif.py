@@ -30,7 +30,7 @@ chrome_driver = "chromedriver.exe" # path to driver (make sure driver version is
 driver = webdriver.Chrome(chrome_options=chrome_options, executable_path=chrome_driver)
 driver.get("https://hackerone.com/directory/programs?offers_bounties=true&order_direction=DESC&order_field=started_accepting_at")
 driver.implicitly_wait(20)
-current = driver.find_element_by_xpath('/html/body/div[2]/div/div[4]/div/div[2]/div/div/div/div/table/tbody/tr[1]/td[1]/div/div[2]/div[1]/div/span/strong/a').get_attribute("href")
+current = driver.find_element_by_xpath('/html/body/div[2]/div[4]/div/div[2]/div/div/div/div/table/tbody/tr[1]/td[1]/div/div[2]/div[1]/div/span/strong/a').get_attribute("href")
 driver.quit()
 if current != prev:
 	with open(filename, 'wb') as fi:
